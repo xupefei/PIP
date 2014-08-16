@@ -16,6 +16,11 @@ function pip()
 	// Get our url path and trim the / of the left and the right
 	if($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.php', '', $script_url)) .'/', '', $request_url, 1), '/');
     
+    // Remove arguments after ? mark
+    if(strpos($url, '?') !== false){
+        $url = substr($url, 0, strpos($url, '?'));
+    }
+    
 	// Split the url into segments
 	$segments = explode('/', $url);
 	
