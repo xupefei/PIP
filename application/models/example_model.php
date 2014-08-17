@@ -2,10 +2,19 @@
 
 class Example_model extends Model {
 	
+    public function __construct()
+    {
+        parent::__construct('phpwind');
+    }
+    
 	public function getSomething($id)
 	{
-		$id = $this->escapeString($id);
-		$result = $this->query('SELECT * FROM something WHERE id="'. $id .'"');
+		$result = $this->get('tbl_user',
+            '*',
+            [
+                "username" => 'abcd'
+            ]);
+        
 		return $result;
 	}
 

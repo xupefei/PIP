@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <StartAction>SpecificPage</StartAction>
+    <SpecificPageValue>
+    </SpecificPageValue>
+    <StartUrlValue>http://localhost:8080</StartUrlValue>
+    <PHPDebugging>True</PHPDebugging>
+    <JsDebugging>False</JsDebugging>
+    <SilverlightDebugging>False</SilverlightDebugging>
+    <Server>PHPDev</Server>
+    <CustomServerUrl />
+    <PublishEvent>None</PublishEvent>
+    <PublishBeforeDebugProfile />
+    <PHPDevAutoPort>False</PHPDevAutoPort>
+    <PHPDevPort>8080</PHPDevPort>
+    <PHPDevRouting />
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:12279/</IISProjectUrl>
+  </PropertyGroup>
+</Project>
